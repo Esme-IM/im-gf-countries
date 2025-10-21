@@ -1,12 +1,13 @@
 <?php 
 /**
  * Plugin Name: Innermedia Gravity Form Edits - Countries
-	Plugin URI: https://innermedia.co.uk
- * Description: Updating the gravity forms country field for Dukes international sites
- * Version: 1.0
+ * Plugin URI: https://www.innermedia.co.uk
+ * Description: Updating the Gravity Forms country field
  * Author: Innermedia
- * Author URI: https://innermedia.co.uk
-*/
+ * GitHub Plugin URI: https://github.com/Esme-IM/im-gf-countries
+ * Primary Branch: main
+ * Version: 1.1
+ */
 
 register_activation_hook(__FILE__, 'imgformedits_activation_logic');
 
@@ -27,5 +28,6 @@ add_action( 'deactivated_plugin', 'detect_plugin_deactivation', 10, 2 );
 if (is_plugin_active('gravityforms/gravityforms.php') ) {
 	include('includes/countries.php');
 }
+
 
 ?>
