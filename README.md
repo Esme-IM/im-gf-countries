@@ -1,2 +1,2 @@
 # im-gf-countries
-Updating the gravity forms country field
+Updating the Gravity Forms country field
